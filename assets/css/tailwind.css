@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --theme-bg: 26 25 31;
-    --theme-bg-alt: 42 40 53;
+    --theme-bg: 42 40 53;
+    --theme-bg-alt: 26 25 31;
     --theme-fg: 217 220 212;
     --theme-fg-muted: 142 141 158;
 
@@ -14,7 +17,16 @@
     --theme-blue: 127 197 255;
 }
 
+* {
+    @apply font-sans;
+}
+
 html, body {
-    background-color: rgb(var(--theme-bg));
-    color: rgb(var(--theme-fg));
+    @apply bg-background;
+    @apply text-normal;
+    @apply w-screen;
+    @apply w-dvw;
+
+    min-height: 100vh;
+    min-height: 100dvh;
 }

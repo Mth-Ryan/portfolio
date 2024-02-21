@@ -3,6 +3,29 @@ import colors from 'tailwindcss/colors'
 
 export default <Partial<Config>>{
     theme: {
+        fontFamily: {
+            "sans": [
+                "Inter",
+                "ui-sans-serif",
+                "system-ui",
+                "sans-serif",
+                "Apple Color Emoji",
+                "Segoe UI Emoji",
+                "Segoe UI Symbol",
+                "Noto Color Emoji"
+            ],
+            "mono": [
+                "JetBrains Mono",
+                "ui-monospace",
+                "SFMono-Regular",
+                "Menlo",
+                "Monaco",
+                "Consolas",
+                "Liberation Mono",
+                "Courier New",
+                "monospace",
+            ],
+        },
         extend: {
             colors: {
                 "normal": 'rgb(var(--theme-fg) / <alpha-value>)',

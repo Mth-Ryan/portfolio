@@ -4,5 +4,10 @@
   });
 </script>
 
-<template class="">
+<template>
+  <Header />
+
+  <Section :id="'about'">Hello World</Section>
+
+  <AltSection :id="'skills'">Hello World</AltSection>
 </template>
