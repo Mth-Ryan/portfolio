@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section v-bind:id="id" class="w-full px-8 py-10">
+  <section v-bind:id="id" class="w-full px-8 py-16">
     <Container>
       <slot />
     </Container>

@@ -9,4 +9,10 @@
 
   <InfoSection />
   <SkillsSection />
+  <ProjectsSection />
+
+  <AltSection>
+
+  </AltSection>
+
 </template>

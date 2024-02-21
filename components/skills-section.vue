@@ -3,8 +3,11 @@
 </script>
 
 <template>
-  <AltSection :id="'skills'">
-    <h2 class="text-2xl">Habilidades</h2>
+  <AltSection id="skills">
+    <div class="flex gap-3 items-center">
+      <LucideCode2 class="size-8 text-function" />
+      <h2 class="text-3xl">Habilidades</h2>
+    </div>
 
     <div class="grid grid-cols-2 gap-12 mt-8">
       <Terminal />

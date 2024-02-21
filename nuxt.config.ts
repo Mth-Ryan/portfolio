@@ -11,9 +11,5 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n",
-    "nuxt-lucide-icons"
-  ]
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "nuxt-lucide-icons", "vue3-carousel-nuxt"]
 })

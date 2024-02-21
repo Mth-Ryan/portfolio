@@ -1,5 +1,5 @@
 <template>
-  <Section :id="'about'">
+  <Section id="about">
     <div class="pt-16 pb-8 relative">
       <div class="flex flex-col gap-8 max-w-[46ch]">
         <div class="flex flex-col gap-3">
@@ -28,10 +28,10 @@
         <img
             alt="avatar"
             src="../assets/images/avatar-grayscale.png"
-            class="h-[350px] absolute bottom-[-4.5rem] right-20 z-20"
+            class="h-[350px] absolute bottom-[-6rem] right-20 z-20"
         />
 
-        <div class="absolute flex flex-col items-center gap-3 bottom-[-2.5rem] right-0">
+        <div class="absolute flex flex-col items-center gap-3 bottom-[-4.5rem] right-0">
           <div class="w-px h-10 bg-keyword"></div>
           <a href="https://github.com/Mth-Ryan" target="_blank">
             <svg
