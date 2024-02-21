@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section id="{{ id }}" class="w-full bg-background-alt p-8">
+  <section id="{{ id }}" class="w-full bg-background-alt px-8 py-10">
     <Container>
       <slot/>
     </Container>

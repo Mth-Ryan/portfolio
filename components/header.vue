@@ -8,7 +8,7 @@
       <div class="flex justify-between items-center">
         <span>Logo</span>
 
-        <nav>
+        <nav class="hidden md:block">
           <ul class="flex gap-6 text-muted">
             <li>
               <a href="#about">Sobre</a>

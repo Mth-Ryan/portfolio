@@ -7,7 +7,6 @@
 <template>
   <Header />
 
-  <Section :id="'about'">Hello World</Section>
-
+  <InfoSection />
   <AltSection :id="'skills'">Hello World</AltSection>
 </template>
