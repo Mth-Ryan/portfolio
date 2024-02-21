@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section id="{{ id }}" class="w-full bg-background-alt px-8 py-10">
+  <section v-bind:id="id" class="w-full bg-background-alt px-8 py-10">
     <Container>
       <slot/>
     </Container>

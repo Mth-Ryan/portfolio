@@ -28,7 +28,38 @@ html, body {
     @apply text-normal;
     @apply w-screen;
     @apply w-dvw;
+    @apply scroll-smooth;
 
     min-height: 100vh;
     min-height: 100dvh;
+}
+
+.code {
+    @apply font-mono;
+}
+
+.code > em {
+    @apply font-normal;
+    @apply not-italic;
+    @apply text-keyword;
+}
+
+.code > s {
+    @apply text-string;
+    text-decoration: none;
+}
+
+.code > i {
+    @apply not-italic;
+    @apply text-function;
+}
+
+.code > b {
+    @apply font-normal;
+    @apply text-constant;
+}
+
+.code > u {
+    @apply text-muted;
+    text-decoration: none;
 }

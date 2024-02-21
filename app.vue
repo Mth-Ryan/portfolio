@@ -8,5 +8,5 @@
   <Header />
 
   <InfoSection />
-  <AltSection :id="'skills'">Hello World</AltSection>
+  <SkillsSection />
 </template>
