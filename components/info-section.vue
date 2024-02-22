@@ -31,6 +31,9 @@
             class="h-[350px] absolute bottom-[-6rem] right-20 z-20"
         />
 
+        <div class="absolute w-44 h-28 bg-keyword right-40 bottom-4 z-10" />
+        <div class="absolute w-44 h-28 border-4 border-background-alt right-48 -bottom-2 z-[11]" />
+
         <div class="absolute flex flex-col items-center gap-3 bottom-[-4.5rem] right-0">
           <div class="w-px h-10 bg-keyword"></div>
           <a href="https://github.com/Mth-Ryan" target="_blank">
@@ -72,3 +75,5 @@
     </div>
   </Section>
 </template>
+<script setup lang="ts">
+</script>
