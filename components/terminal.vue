@@ -12,8 +12,8 @@
       </div>
 
       <span class="py-1 px-3 rounded-md bg-background-alt/30">
-            Go
-          </span>
+          Go
+      </span>
     </div>
 
     <div class="flex-1 p-6 code">

@@ -10,9 +10,6 @@
   <InfoSection />
   <SkillsSection />
   <ProjectsSection />
-
-  <AltSection>
-
-  </AltSection>
+  <RecommendationsSection />
 
 </template>
