@@ -42,24 +42,29 @@ html, body {
     @apply font-normal;
     @apply not-italic;
     @apply text-keyword;
+    @apply font-mono;
 }
 
 .code > s {
     @apply text-string;
+    @apply font-mono;
     text-decoration: none;
 }
 
 .code > i {
     @apply not-italic;
     @apply text-function;
+    @apply font-mono;
 }
 
 .code > b {
     @apply font-normal;
     @apply text-constant;
+    @apply font-mono;
 }
 
 .code > u {
     @apply text-muted;
+    @apply font-mono;
     text-decoration: none;
 }
