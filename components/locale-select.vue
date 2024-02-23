@@ -15,7 +15,10 @@
   };
 
   const flagSrc = (code: string) =>
-      `https://flagcdn.com/${code}.svg`
+      `https://flagcdn.com/${code}.svg`;
+
+  const dropdown = ref(null);
+  onClickOutside(dropdown, () => { open.value = false });
 </script>
 
 <template>
@@ -33,7 +36,12 @@
       <LucideChevronUp class="size-4" v-if="open" />
       <LucideChevronDown class="size-4" v-else />
     </button>
-    <div class="absolute right-0 mt-2 flex flex-col gap-2 p-3 rounded-md border border-background shadow-lg bg-background-alt/30" v-if="open">
+
+    <div
+      class="absolute right-0 mt-2 flex flex-col gap-2 p-3 rounded-md border border-background shadow-lg bg-background-alt/30"
+      v-if="open"
+      ref="dropdown"
+    >
       <button
         class="flex gap-2 items-center"
         v-for="(option, key) in options"

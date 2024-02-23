@@ -16,5 +16,5 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     vueI18n: "./i18n.config.ts",
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "nuxt-lucide-icons", "vue3-carousel-nuxt"]
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "nuxt-lucide-icons", "vue3-carousel-nuxt", "@vueuse/nuxt"]
 })
