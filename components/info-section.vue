@@ -1,15 +1,15 @@
 <template>
   <Section id="about">
-    <div class="pt-16 pb-8 relative">
-      <div class="flex flex-col gap-8 max-w-[46ch]">
-        <div class="flex flex-col gap-3">
+    <div class="flex flex-col items-center mt-16 lg:mt-0 lg:flex-row lg:justify-between">
+      <div class="flex flex-col gap-8 max-w-[60ch] lg:max-w-[46ch] text-center lg:text-left">
+        <div class="flex flex-col gap-3 items-center lg:items-start">
           <div class="flex gap-3 items-end">
-            <span class="text-xl font-['Montserrat']">{{ $t("hello") }}</span>
-            <h1 class="text-3xl text-keyword font-bold">
+            <span class="text-lg lg:text-xl font-['Montserrat']">{{ $t("hello") }}</span>
+            <h1 class="text-2xl lg:text-3xl text-keyword font-bold">
               Mateus Ryan
             </h1>
           </div>
-          <h2 class="text-xl font-['Montserrat']">
+          <h2 class="text-lg lg:text-xl font-['Montserrat']">
             {{ $t("title") }}
           </h2>
         </div>
@@ -17,17 +17,17 @@
         <p class="text-muted text-sm text-pretty">{{ $t("aboutMe") }}</p>
       </div>
 
-      <div class="relative">
-        <img
-            alt="avatar"
-            src="../assets/images/avatar-grayscale.png"
-            class="h-[350px] absolute bottom-[-6rem] right-20 z-20"
-        />
+      <div class="flex items-end justify-between">
+        <div />
+        <div class="aspect-[1.066532] h-[250px] lg:h-[350px] relative">
+          <img
+              alt="avatar"
+              src="../assets/images/avatar-grayscale.png"
+              class="absolute -bottom-16 lg:right-16 h-[250px] lg:h-[350px] z-20"
+          />
+        </div>
 
-        <div class="absolute w-44 h-28 bg-keyword right-40 bottom-4 z-10" />
-        <div class="absolute w-44 h-28 border-4 border-background-alt right-48 -bottom-2 z-[11]" />
-
-        <div class="absolute flex flex-col items-center gap-3 bottom-[-4.5rem] right-0">
+        <div class="flex flex-col items-center gap-3">
           <div class="w-px h-10 bg-keyword"></div>
           <a href="https://github.com/Mth-Ryan" target="_blank">
             <svg

@@ -2,9 +2,9 @@
 </script>
 
 <template>
-  <header class="w-full px-8 py-4">
+  <header class="w-full px-8 py-4 fixed bg-background/80 backdrop-blur z-50">
     <Container>
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center text-sm lg:text-base">
         <span>Logo</span>
 
         <nav class="hidden md:block">

@@ -25,7 +25,7 @@
   <div class="relative">
     <button
       class="flex items-center gap-2 px-3 py-1 rounded-md transition hover:bg-background-alt/30"
-      :class="{ 'bg-background-alt/30': open }"
+      :class="{ 'bg-background-alt/60': open }"
       @click="() => { open = !open }">
       <img
         class="size-7 rounded"
@@ -38,7 +38,7 @@
     </button>
 
     <div
-      class="absolute right-0 mt-2 flex flex-col gap-2 p-3 rounded-md border border-background shadow-lg bg-background-alt/30"
+      class="absolute right-0 mt-2 flex flex-col gap-2 p-3 rounded-md border border-background shadow-lg bg-background-alt/60 backdrop-blur-xl"
       v-if="open"
       ref="dropdown"
     >

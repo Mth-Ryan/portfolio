@@ -28,10 +28,10 @@
   <Section id="projects">
     <div class="flex flex-col gap-4 justify-center items-center">
       <div class="flex gap-3 items-center">
-        <LucideBookMarked class="size-8 text-constant" />
-        <h2 class="text-3xl">{{ $t("projects") }}</h2>
+        <LucideBookMarked class="size-6 lg:size-8 text-constant" />
+        <h2 class="text-2xl lg:text-3xl">{{ $t("projects") }}</h2>
       </div>
-      <p class="text-muted max-w-[60ch] text-center">
+      <p class="text-sm lg:text-base text-muted max-w-[60ch] text-center">
         {{ $t("projectsDescription") }}
         <a class="text-constant" href="https://github.com/Mth-Ryan">Github</a>.
       </p>

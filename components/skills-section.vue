@@ -10,8 +10,8 @@
       code: `
           <em>namespace</em> Project; <br />
           <br />
-          <em>var</em> builder <em>=</em> <br />
-          &emsp;&emsp;WebApplication.<i>CreateBuilder</i>(args); <br />
+          <em>var</em> builder <em>=</em> WebApplication
+          &emsp;&emsp;.<i>CreateBuilder</i>(args); <br />
           <br />
           <em>var</em> app = builder.<i>Build</i>();<br />
           <br />
@@ -159,7 +159,7 @@
       description: "goSkillDescription",
       code: `
           &lt;<em>div</em> <br />
-          &emsp;&emsp;class=<s>"flex justify-center items-center
+          &emsp;&emsp;class=<s>"flex justify-center items-center <br />
           &emsp;&emsp;&emsp;&emsp;fixed w-screen h-screen <br />
           &emsp;&emsp;&emsp;&emsp;bg-zinc-100/60 backdrop-blur"</s> <br />
           &gt; <br />
@@ -324,20 +324,20 @@
 <template>
   <AltSection id="skills">
     <div class="flex gap-3 items-center">
-      <LucideCode2 class="size-8 text-function" />
-      <h2 class="text-3xl">{{ $t("skills") }}</h2>
+      <LucideCode2 class="size-6 lg:size-8 text-function" />
+      <h2 class="text-2xl lg:text-3xl">{{ $t("skills") }}</h2>
     </div>
 
-    <div class="grid grid-cols-2 gap-12 mt-8">
+    <div class="flex flex-col-reverse lg:grid grid-cols-2 gap-12 mt-8">
       <Terminal :skill="skill" />
 
       <div class="flex flex-col gap-4">
-        <h3 class="text-xl">{{ skill.fullName }}</h3>
-        <p class="text-muted">
+        <h3 class="text-lg lg:text-xl">{{ skill.fullName }}</h3>
+        <p class="text-sm lg:text-base text-muted">
           {{ $t(skill.description) }}
         </p>
 
-        <div class="grid grid-cols-6 gap-4 mt-4">
+        <div class="flex overflow-scroll lg:overflow-auto lg:grid grid-cols-6 gap-4 p-4">
           <SkillButton
             v-for="sel in skills"
             :dev-icon="sel.icon"
