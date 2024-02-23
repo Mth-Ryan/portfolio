@@ -4,24 +4,17 @@
       <div class="flex flex-col gap-8 max-w-[46ch]">
         <div class="flex flex-col gap-3">
           <div class="flex gap-3 items-end">
-            <span class="text-xl font-['Montserrat']">Olá, eu sou</span>
+            <span class="text-xl font-['Montserrat']">{{ $t("hello") }}</span>
             <h1 class="text-3xl text-keyword font-bold">
               Mateus Ryan
             </h1>
           </div>
           <h2 class="text-xl font-['Montserrat']">
-            Desenvolvedor Web Fullstack e Físico
+            {{ $t("title") }}
           </h2>
         </div>
 
-        <p class="text-muted text-sm text-pretty">
-          Trabalho a 4 anos como desenvolvedor de software,
-          nos ultimos dois anos tenho progredido na minha jornada
-          como desenvolvedor fullstack sendo especialista em .Net,
-          Golang, Typescript. Constui minha carreira desenvolvendo
-          aplicações de alto desempenho focadas em tecnologias
-          cloud.
-        </p>
+        <p class="text-muted text-sm text-pretty">{{ $t("aboutMe") }}</p>
       </div>
 
       <div class="relative">

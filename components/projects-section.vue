@@ -7,11 +7,10 @@
     <div class="flex flex-col gap-4 justify-center items-center">
       <div class="flex gap-3 items-center">
         <LucideBookMarked class="size-8 text-constant" />
-        <h2 class="text-3xl">Projetos</h2>
+        <h2 class="text-3xl">{{ $t("projects") }}</h2>
       </div>
       <p class="text-muted max-w-[60ch] text-center">
-        Alguns dos meus projetos comerciais e open source. Você pode checar
-        a lista completa de contribuições no meu
+        {{ $t("projectsDescription") }}
         <a class="text-constant" href="https://github.com/Mth-Ryan">Github</a>.
       </p>
     </div>
@@ -35,8 +34,7 @@
                     Common E-commerce Service
                   </span>
                   <p class="text-sm text-white">
-                    Um serviço de e-commerce customizavel com foco em ser vendido
-                    sob licença.
+                    {{ $t("commonEcommerceServiceProjectDescription") }}
                   </p>
                   <button class="py-1 px-2 flex gap-2 items-center rounded bg-constant text-background mt-3">
                     <svg
