@@ -5,6 +5,8 @@ export default defineI18nConfig(() => ({
         en: {
             showMore: "Show More",
             showLess: "Show Less",
+            visit: "Visit",
+            sourceCode: "Source Code",
             about: "About",
             skills: "Skills",
             projects: "Projects",
@@ -41,9 +43,33 @@ export default defineI18nConfig(() => ({
             `,
 
             // Projects section
+            saionaraProjectDescription: `
+                A catalog and management system created
+                during my time at the company Saionara Cosméticos.
+                With this project I was able to dramatically reduce
+                the company's previous hosting costs.
+            `,
+
             commonEcommerceServiceProjectDescription: `
-                A customizable e-commerce service focused
-                on being sold under license.
+                A high performance E-commerce system made to be sold under license.
+                It has integration with multiple payment and delivery platforms
+                 and a user-friendly management system for catalog and other resources.
+                 Uses the best of the .Net platform to avoid code duplication.
+            `,
+
+            rinhaCompilerProjectDescription: `
+                A compiler capable of generating a program in .Net IL
+                executable for the functional language "rinha".
+                Was created in 5 days during the "Rinha de compiler" event on Brazil.
+                It was made from scratch using only Mono.Cecil to emmit
+                IL and Mono.Options for parsing the cli arguments.
+            `,
+
+            goTemplatesProjectDescription: `
+                A collection of framework-agnostic templates for Golang web projects.
+                Its focus is to bring standardization to web projects following
+                Domain Driven Design concepts. Possibility of modularity
+                and ease of exchanging components at the infrastructure layer.
             `,
 
             // Skills section
@@ -57,6 +83,8 @@ export default defineI18nConfig(() => ({
         pt: {
             showMore: "Mostrar Mais",
             showLess: "Mostrar Menos",
+            visit: "Visitar",
+            sourceCode: "Source Code",
             about: "Sobre",
             skills: "Habilidades",
             projects: "Projetos",
@@ -93,9 +121,35 @@ export default defineI18nConfig(() => ({
             `,
 
             // Projects section
+            saionaraProjectDescription: `
+                Um catalogo e sistema de gerenciamento criados
+                durante minha passagem pela empresa Saionara Cosméticos.
+                Com esse projeto fui capaz de reduzir vertiginozamente
+                os custos anteriores em hospedagem da empresa.
+            `,
+
             commonEcommerceServiceProjectDescription: `
-                Um serviço de e-commerce customizavel com
-                foco em ser vendido sob licença.
+                Um sistema de E-commerce de alta performace 
+                feito para ser vendido sob licença. Possuí integração
+                com multiplas plataformas de pagamento e entregas
+                e um sistema de gerenciamento amigavel para o
+                catalogo e outros recursos. Utiliza o melhor da
+                plataforma .Net para evitar duplicação de código.
+            `,
+
+            rinhaCompilerProjectDescription: `
+                Um compilador capaz de gerar um programa em .Net IL
+                executável para a linguagem funcional "rinha".
+                Foi criado em 5 dias durante o evento rinha de compiler.
+                Feito do zero utilizando apenas o Mono.Cecil para a emissão
+                de IL e o Mono.Options para o parsing dos argumentos da cli.
+            `,
+
+            goTemplatesProjectDescription: `
+                Uma coleção de templates agnósticos a framework para projetos Golang web.
+                Seu foco é trazer uma padronização para projetos web seguindo
+                conceitos de Domain Driven Design. Possibilidade de modularidade
+                e facilidade na troca de componentes na camada de infraestrutura.
             `,
 
             // Skills section
