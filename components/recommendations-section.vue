@@ -14,16 +14,18 @@
 
     <div class="mt-16  flex flex-col-reverse lg:grid grid-cols-[auto_18.3rem] gap-6 items-center">
       <div class="flex flex-col gap-4">
-        <p class="text-normal/80 text-sm lg:text-base">
-          I wholeheartedly recommend Ryan for <span class="text-keyword">his exceptional skills as a Fullstack developer</span>.
-          Having witnessed firsthand his dedication to staying at the forefront of technology,
-          Ryan's creation of a high-performing commercial website at
-          http://www.saionaracosmeticos.com.br, employing cutting-edge technology and AWS expertise,
-          is a testament to his commitment to excellence.
-          His software development proficiency and deep understanding of best practices make him an invaluable asset to any team.
-          Ryan's unwavering passion for staying at the vanguard of technology and his impeccable work
-          ethic make him an exemplary professional.
-        </p>
+        <ShowMore>
+          <p class="text-normal/80 text-sm lg:text-base">
+            I wholeheartedly recommend Ryan for <span class="text-keyword">his exceptional skills as a Fullstack developer</span>.
+            Having witnessed firsthand his dedication to staying at the forefront of technology,
+            Ryan's creation of a high-performing commercial website at
+            http://www.saionaracosmeticos.com.br, employing cutting-edge technology and AWS expertise,
+            is a testament to his commitment to excellence.
+            His software development proficiency and deep understanding of best practices make him an invaluable asset to any team.
+            Ryan's unwavering passion for staying at the vanguard of technology and his impeccable work
+            ethic make him an exemplary professional.
+          </p>
+        </ShowMore>
 
         <div class="flex flex-col gap-1">
           <div class="flex gap-2 items-center">
@@ -35,7 +37,7 @@
       </div>
 
       <div class="mx-auto">
-        <img class="rounded-full h-44 lg:h-64" src="~/assets/images/avatar-rodirgo.png" />
+        <img class="rounded-full h-44 lg:h-52" src="~/assets/images/avatar-rodirgo.png" />
       </div>
     </div>
   </Section>
