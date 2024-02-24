@@ -3,6 +3,8 @@ export default defineI18nConfig(() => ({
     locale: 'en',
     messages: {
         en: {
+            showMore: "Show More",
+            showLess: "Show Less",
             about: "About",
             skills: "Skills",
             projects: "Projects",
@@ -53,6 +55,8 @@ export default defineI18nConfig(() => ({
             `,
         },
         pt: {
+            showMore: "Mostrar Mais",
+            showLess: "Mostrar Menos",
             about: "Sobre",
             skills: "Habilidades",
             projects: "Projetos",

@@ -18,14 +18,14 @@
             v-if="expanded"
             class="flex items-center gap-2"
         >
-          Show Less
+          {{ $t("showLess") }}
           <LucideChevronUp class="size-4" />
         </span>
         <span
           v-else
           class="flex items-center gap-2"
         >
-          Show More
+          {{ $t("showMore") }}
           <LucideChevronDown class="size-4" />
         </span>
       </button>
