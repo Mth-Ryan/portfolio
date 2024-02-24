@@ -1,8 +1,8 @@
 <template>
   <Section id="about">
-    <div class="flex flex-col items-center mt-16 lg:mt-0 lg:flex-row lg:justify-between">
-      <div class="flex flex-col gap-8 max-w-[60ch] lg:max-w-[46ch] text-center lg:text-left">
-        <div class="flex flex-col gap-3 items-center lg:items-start">
+    <div class="flex flex-col items-center md:flex-row md:justify-between">
+      <div class="flex flex-col gap-8 max-w-[60ch] md:max-w-[46ch] pt-16 text-center md:text-left">
+        <div class="flex flex-col gap-3 items-center md:items-start">
           <div class="flex gap-3 items-end">
             <span class="text-lg lg:text-xl font-['Montserrat']">{{ $t("hello") }}</span>
             <h1 class="text-2xl lg:text-3xl text-keyword font-bold">
@@ -23,7 +23,7 @@
           <img
               alt="avatar"
               src="../assets/images/avatar-grayscale.png"
-              class="absolute -bottom-16 lg:right-16 h-[250px] lg:h-[350px] z-20"
+              class="absolute -bottom-16 md:bottom-[-4.5rem] lg:bottom-[-4rem] lg:right-16 h-[250px] lg:h-[350px] z-20"
           />
         </div>
 

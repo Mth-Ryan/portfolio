@@ -10,7 +10,7 @@
       code: `
           <em>namespace</em> Project; <br />
           <br />
-          <em>var</em> builder <em>=</em> WebApplication
+          <em>var</em> builder <em>=</em> WebApplication <br />
           &emsp;&emsp;.<i>CreateBuilder</i>(args); <br />
           <br />
           <em>var</em> app = builder.<i>Build</i>();<br />
@@ -328,7 +328,7 @@
       <h2 class="text-2xl lg:text-3xl">{{ $t("skills") }}</h2>
     </div>
 
-    <div class="flex flex-col-reverse lg:grid grid-cols-2 gap-12 mt-8">
+    <div class="flex flex-col-reverse md:grid grid-cols-2 gap-12 mt-8">
       <Terminal :skill="skill" />
 
       <div class="flex flex-col gap-4">
@@ -337,7 +337,7 @@
           {{ $t(skill.description) }}
         </p>
 
-        <div class="flex overflow-scroll lg:overflow-auto lg:grid grid-cols-6 gap-4 p-4">
+        <div class="flex overflow-scroll max-h-72 lg:overflow-auto md:grid grid-cols-4 lg:grid-cols-6 gap-4 p-4">
           <SkillButton
             v-for="sel in skills"
             :dev-icon="sel.icon"

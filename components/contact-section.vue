@@ -5,7 +5,7 @@
 <template>
   <AltSection id="contact">
     <div class="flex flex-col justify-center items-center gap-4">
-      <div class="flex flex-col lg:flex-row items-center gap-3">
+      <div class="flex flex-col md:flex-row items-center gap-3">
         <LucideUser class="size-6 lg:size-8 text-keyword" />
         <h2 class="text-2xl lg:text-3xl text-center">{{ $t("contactCompose") }}</h2>
       </div>
