@@ -14,7 +14,11 @@
 
     <div class="mt-12  flex flex-col-reverse lg:grid grid-cols-[18.3rem_auto] gap-6 items-center">
       <div class="mx-auto">
-        <img alt="" class="rounded-full h-44 lg:h-52" src="~/assets/images/avatar-rodirgo.png" />
+        <img
+          alt=""
+          class="rounded-full h-44 lg:h-52 drop-shadow-xl"
+          src="~/assets/images/avatar-rodirgo.png"
+        />
       </div>
 
       <div class="flex flex-col gap-4">

@@ -4,7 +4,7 @@
 
 <template>
   <div class="relative w-full">
-    <div class="overflow-hidden" :class="{ 'max-h-28': !expanded }">
+    <div class="overflow-hidden transition" :class="{ 'max-h-28': !expanded }">
       <slot />
     </div>
     <div
