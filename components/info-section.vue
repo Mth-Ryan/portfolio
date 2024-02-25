@@ -48,7 +48,7 @@
             </svg>
           </a>
 
-          <a href="https://www.linkedin.com/in/mateus-ryan-aa63b3210/">
+          <a href="https://www.linkedin.com/in/mth-ryan" target="_blank">
             <LucideLinkedin class="size-5" />
           </a>
 

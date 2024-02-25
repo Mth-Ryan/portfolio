@@ -23,10 +23,10 @@
         </a>
       </ContactClipboard>
 
-      <ContactClipboard value="https://www.linkedin.com/in/mateus-ryan-aa63b3210/">
+      <ContactClipboard value="https://www.linkedin.com/in/mth-ryan">
         <LucideLinkedin class="size-4" />
-        <a class="hover:underline text-sm lg:text-base" href="https://www.linkedin.com/in/mateus-ryan-aa63b3210/">
-          linkedin.com/in/mateus-ryan-aa63b3210
+        <a class="hover:underline text-sm lg:text-base" href="https://www.linkedin.com/in/mth-ryan" target="_blank">
+          linkedin.com/in/mth-ryan
         </a>
       </ContactClipboard>
 
