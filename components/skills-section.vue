@@ -6,7 +6,7 @@
       exampleName: "C#",
       fullName: ".Net Core",
       icon: "devicon-dotnetcore-plain",
-      description: "goSkillDescription",
+      description: "dotnetSkillDescription",
       code: `
           <em>namespace</em> Project; <br />
           <br />
@@ -49,7 +49,7 @@
       exampleName: "TS",
       fullName: "Typescript / Javascript",
       icon: "devicon-typescript-plain",
-      description: "goSkillDescription",
+      description: "typescriptSkillDescription",
       code: `
           <em>type</em> Vec <em>=</em> { <br />
           &emsp;&emsp;x: <em>number</em>; <br />
@@ -70,7 +70,7 @@
       exampleName: "Rust",
       fullName: "Rust",
       icon: "devicon-rust-original",
-      description: "goSkillDescription",
+      description: "rustSkillDescription",
       code: `
           <em>use</em> serde<em>::</em>{<i>Serialize</i>, <i>Deserialize</i>}; <br />
           <br />
@@ -95,7 +95,7 @@
       exampleName: "Tsx",
       fullName: "Next.js",
       icon: "devicon-nextjs-original-wordmark",
-      description: "goSkillDescription",
+      description: "nextjsSkillDescription",
       code: `
           <em>function</em> <i>Page</i>() { <br />
           &emsp;&emsp;<em>const</em> [count, setCount] <em>=</em> <i>useState</i>(<b>1</b>); <br />
@@ -115,7 +115,7 @@
       exampleName: "Vue",
       fullName: "Nuxt.js",
       icon: "devicon-nuxtjs-plain",
-      description: "goSkillDescription",
+      description: "nuxtjsSkillDescription",
       code: `
           &lt;<em>script</em> setup lang=<s>"ts"</s>&gt; <br />
            &emsp;&emsp;<em>const</em> count <em>=</em> <i>ref</i>(<b>1</b>); <br />
@@ -135,7 +135,7 @@
       exampleName: "JS",
       fullName: "Node.js",
       icon: "devicon-nodejs-plain-wordmark",
-      description: "goSkillDescription",
+      description: "nodejsSkillDescription",
       code: `
           <em>const</em> express = <em>require</em>(<s>'express'</s>); <br />
           <em>const</em> app = express(); <br />
@@ -156,7 +156,7 @@
       exampleName: "HTML",
       fullName: "Tailwind Css",
       icon: "devicon-tailwindcss-original",
-      description: "goSkillDescription",
+      description: "tailwindSkillDescription",
       code: `
           &lt;<em>div</em> <br />
           &emsp;&emsp;class=<s>"flex justify-center items-center <br />
@@ -177,7 +177,7 @@
       exampleName: "Bash",
       fullName: "Linux",
       icon: "devicon-linux-plain",
-      description: "goSkillDescription",
+      description: "linuxSkillDescription",
       code: `
         <u>$</u> <i>export</i> <em>$</em>(<i>cat</i> <s>"/etc/os-release"</s> | <i>xargs</i>) <br />
         <br />
@@ -194,7 +194,7 @@
       exampleName: "Conf",
       fullName: "Nginx",
       icon: "devicon-nginx-original",
-      description: "goSkillDescription",
+      description: "nginxSkillDescription",
       code: `
         <em>upstream</em> <s>app_upstream</s> { <br />
         &emsp;&emsp;<em>server</em> <s>localhost:3000</s>; <br />
@@ -215,7 +215,7 @@
       exampleName: "Bash",
       fullName: "Redis",
       icon: "devicon-redis-plain",
-      description: "goSkillDescription",
+      description: "redisSkillDescription",
       code: `
           <u>$</u> <i>redis-cli</i> -h <s>"localhost"</s> -p <b>6379</b> <br />
           <br />
@@ -236,7 +236,7 @@
       exampleName: "SQL",
       fullName: "SQL",
       icon: "devicon-azuresqldatabase-plain",
-      description: "goSkillDescription",
+      description: "sqlSkillDescription",
       code: `
           <em>CREATE</em> <em>TABLE</em> users ( <br />
           &emsp;&emsp;<b>id</b> <em>INT PRIMARY KEY</em>, <br />
@@ -258,7 +258,7 @@
       exampleName: "Dockerfile",
       fullName: "Docker",
       icon: "devicon-docker-plain",
-      description: "goSkillDescription",
+      description: "dockerSkillDescription",
       code: `
           <em>FROM</em> golang:1.22.0-alpine <em>AS</em> builder <br />
           <br />
@@ -280,7 +280,7 @@
       exampleName: "Bash",
       fullName: "Amazon Web Services",
       icon: "devicon-amazonwebservices-plain-wordmark",
-      description: "goSkillDescription",
+      description: "awsSkillDescription",
       code: `
           <u>$</u> <i>aws</i> ec2 describe-instances <br />
           <br />
@@ -297,7 +297,7 @@
       exampleName: "Yaml",
       fullName: "Ansible",
       icon: "devicon-ansible-plain",
-      description: "goSkillDescription",
+      description: "ansibleSkillDescription",
       code: `
           <em>tasks</em>: <br />
           &emsp;&emsp;- <em>name</em>: Install Docker Dependencies <br />
@@ -312,6 +312,27 @@
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;- python3-setuptools <br />
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<em>state</em>: latest <br />
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<em>update_cache</em>: <b>true</b> <br />
+        `,
+    },
+    {
+      id: "nixos",
+      exampleName: "Nix",
+      fullName: "NixOS",
+      icon: "devicon-nixos-plain",
+      description: "nixSkillDescription",
+      code: `
+          { pkgs ? <em>import</em> &lt;nixpkgs&gt; {} }: <br />
+          pkgs.mkShell { <br />
+          &emsp;&emsp;buildInputs = <em>with</em> pkgs; [<br />
+          &emsp;&emsp;&emsp;&emsp;go <br />
+          &emsp;&emsp;&emsp;&emsp;gnumake <br />
+          &emsp;&emsp;]; <br />
+          <br />
+          &emsp;&emsp;shellHook = <s>'' <br />
+          &emsp;&emsp;&emsp;&emsp;export GOHOME=$HOME/.go <br />
+          &emsp;&emsp;&emsp;&emsp;export CGO_ENABLED=0 <br />
+          &emsp;&emsp;'';</s> <br />
+          }
         `,
     },
   ]
@@ -337,7 +358,7 @@
           {{ $t(skill.description) }}
         </p>
 
-        <div class="flex overflow-scroll max-h-72 lg:overflow-auto md:grid grid-cols-4 lg:grid-cols-6 gap-4 p-4">
+        <div class="flex overflow-scroll max-h-72 lg:overflow-auto md:grid grid-cols-4 lg:grid-cols-6 gap-4 p-4 md:mx-[-1rem]">
           <SkillButton
             v-for="sel in skills"
             :dev-icon="sel.icon"
