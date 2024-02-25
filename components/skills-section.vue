@@ -353,10 +353,14 @@
       <Terminal :skill="skill" />
 
       <div class="flex flex-col gap-4">
-        <h3 class="text-lg lg:text-xl">{{ skill.fullName }}</h3>
-        <p class="text-sm lg:text-base text-muted">
-          {{ $t(skill.description) }}
-        </p>
+        <Transition name="fade" mode="out-in">
+          <div :key="skill.id"  class="flex flex-col gap-4">
+              <h3 class="text-lg lg:text-xl">{{ skill.fullName }}</h3>
+              <p class="text-sm lg:text-base text-muted">
+                {{ $t(skill.description) }}
+              </p>
+          </div>
+        </Transition>
 
         <div class="flex overflow-scroll max-h-72 lg:overflow-auto md:grid grid-cols-4 lg:grid-cols-6 gap-4 p-4 md:mx-[-1rem]">
           <SkillButton
@@ -370,3 +374,15 @@
     </div>
   </AltSection>
 </template>
+
+<style scoped>
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.2s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+</style>

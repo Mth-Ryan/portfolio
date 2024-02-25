@@ -11,7 +11,7 @@
     clicked.value = true;
     setTimeout(() => {
       clicked.value = false;
-    }, 700);
+    }, 1500);
   }
 </script>
 
@@ -23,10 +23,29 @@
 
     <button
       @click="onClicked"
-      class="py-2 px-4 border-s border-background text-muted hover:bg-background hover:text-normal"
+      class="py-2 px-4 border-s border-background text-muted hover:bg-background hover:text-normal relative"
     >
-      <LucideClipboard v-if="!clicked" class="size-4" />
-      <LucideCheck v-if="clicked" class="size-4" />
+      <Transition mode="out-in" name="slide-up">
+        <LucideClipboard v-if="!clicked" class="size-4" />
+        <LucideCheck v-else class="size-4" />
+      </Transition>
     </button>
   </div>
 </template>
+
+<style scoped>
+  .slide-up-enter-active,
+  .slide-up-leave-active {
+    transition: all 0.1s ease-out;
+  }
+
+  .slide-up-enter-from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  .slide-up-leave-to {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+</style>
