@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      title: "Mateus Ryan • Portfolio",
       link: [
+        { rel: "icon", href: "/favicon.svg" },
         { rel: "stylesheet", type: "text/css", href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" }
       ],
     }
