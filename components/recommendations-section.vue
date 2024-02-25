@@ -12,7 +12,10 @@
       {{ $t("recommendationsDescription") }}
     </p>
 
-    <div class="mt-12  flex flex-col-reverse lg:grid grid-cols-[18.3rem_auto] gap-6 items-center">
+    <div
+      v-motion-fade-visible-once
+      class="mt-12  flex flex-col-reverse lg:grid grid-cols-[18.3rem_auto] gap-6 items-center"
+    >
       <div class="mx-auto">
         <img
           alt=""

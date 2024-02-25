@@ -57,7 +57,12 @@
     </div>
 
     <div class="mt-16 flex flex-col gap-24">
-      <div class="group flex flex-col md:grid grid-cols-2 md:items-center gap-8 lg:gap-16" v-for="project in projects" :key="project.id">
+      <div
+        v-motion-fade-visible-once
+        class="group flex flex-col md:grid grid-cols-2 md:items-center gap-8 lg:gap-16"
+        v-for="project in projects"
+        :key="project.id"
+      >
         <img alt="" class="lg:group-even:order-last rounded-md shadow-lg" :src="project.imgUrl">
         <div class="flex flex-col items-start gap-4">
           <h3 class="text-lg lg:text-xl flex items-center gap-4">

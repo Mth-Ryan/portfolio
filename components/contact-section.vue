@@ -15,7 +15,7 @@
       </p>
     </div>
 
-    <div class="mt-16 grid lg:grid-cols-2 gap-8">
+    <div v-motion-fade-visible-once class="mt-16 grid lg:grid-cols-2 gap-8">
       <ContactClipboard value="mthryan@protonmail.com">
         <LucideMail class="size-4" />
         <a class="hover:underline text-sm lg:text-base" href="mailto:mthryan@protonmail.com">

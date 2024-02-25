@@ -1,7 +1,10 @@
 <template>
   <Section id="about">
     <div class="flex flex-col items-center md:flex-row md:justify-between">
-      <div class="flex flex-col gap-8 max-w-[60ch] md:max-w-[46ch] pt-16 text-center md:text-left">
+      <div
+        v-motion-fade-visible-once
+        class="flex flex-col gap-8 max-w-[60ch] md:max-w-[46ch] pt-16 text-center md:text-left"
+      >
         <div class="flex flex-col gap-3 items-center md:items-start">
           <div class="flex gap-3 items-end">
             <span class="text-lg lg:text-xl font-['Montserrat']">{{ $t("hello") }}</span>
@@ -27,7 +30,10 @@
           />
         </div>
 
-        <div class="flex flex-col items-center gap-3">
+        <div
+          v-motion-slide-visible-once-right
+          class="flex flex-col items-center gap-3"
+        >
           <div class="w-px h-10 bg-keyword"></div>
           <a href="https://github.com/Mth-Ryan" target="_blank">
             <svg

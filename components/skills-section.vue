@@ -349,7 +349,10 @@
       <h2 class="text-2xl lg:text-3xl">{{ $t("skills") }}</h2>
     </div>
 
-    <div class="flex flex-col-reverse md:grid grid-cols-2 gap-12 mt-8">
+    <div
+      v-motion-fade-visible-once
+      class="flex flex-col-reverse md:grid grid-cols-2 gap-12 mt-8"
+    >
       <Terminal :skill="skill" />
 
       <div class="flex flex-col gap-4">
