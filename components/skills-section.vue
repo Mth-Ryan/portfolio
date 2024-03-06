@@ -66,6 +66,25 @@
         `,
     },
     {
+      id: "python",
+      exampleName: "Python",
+      fullName: "Python",
+      icon: "devicon-python-plain",
+      description: "pythonSkillDescription",
+      code: `
+          <em>import</em> pandas <em>pd</em> <br />
+          <em>import</em> matplotlib.pyplot <em>as</em> plt <br />
+          <br />
+          df <em>=</em> pd.<i>read_csv</i>(<s>'covid_19_us.csv'</s>) <br />
+          df <em>=</em> df[df.apply(<br />
+          &emsp;&emsp;<em>lambda</em> x<em>:</em> x[<s>"state"</s>] <em>==</em> <s>"Illinois"</s>, <br />
+          &emsp;&emsp;axis<em>=</em><b>1</b>, <br />
+          )] <br />
+          <br />
+          df.<i>plot</i>(x<em>=</em><s>"date"</s>, y<em>=</em><s>"cases"</s>)
+        `,
+    },
+    {
       id: "rust",
       exampleName: "Rust",
       fullName: "Rust",

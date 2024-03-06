@@ -96,6 +96,13 @@ export default defineI18nConfig(() => ({
                 for any project I'm involved in.
             `,
 
+            pythonSkillDescription: `
+                Python was the first programming language I learned. As a physicist
+                I used it for data analysis and equation solutions with libraries such as
+                pandas, matplotlib and numpy. By becoming a fullstack developer, naturally
+                I learned to use web frameworks like Django and FastAPI.
+            `,
+
             rustSkillDescription: `
                 Rust is the language I'm least familiar with. Despite the two years
                 experience, I use it occasionally in projects where the performance
@@ -268,6 +275,13 @@ export default defineI18nConfig(() => ({
                 nativas dos browsers, geralmente me tornando hápito para o desenvolvimento
                 com qualquer framework. Typescript por sua vez é uma extensão natural deste
                 conhecimento. Sendo geralmente o padrão para qualquer projeto que estou envolvido.
+            `,
+
+            pythonSkillDescription: `
+                Python foi a primeira linguagem de programação que aprendi. Enquanto físico
+                a utilizei para a análise de dados e soluções de equações com bibliotecas como
+                pandas, matplotlib e numpy. Ao me tornar fullstack developer, naturalmente
+                aprendi a utilizar frameworks web como Django e FastAPI.
             `,
 
             rustSkillDescription: `
